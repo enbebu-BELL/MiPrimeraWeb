@@ -6,6 +6,65 @@
     <title>Mi Primera Página</title>
     <style>
         body {
+    margin: 0;
+    padding: 0;
+    background-image: url("fondo.jpg");
+    background-size: cover;      /* Ajusta la imagen a toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-attachment: fixed; /* Efecto fijo al hacer scroll */
+    min-height: 100vh;
+}
+
+
+.contenido {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 40px;
+    max-width: 600px;
+    margin: 100px auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+        .centrada {
+    display: block;
+    margin: 20px auto;
+}
+
+        .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    height: 300px;           /* alto del contenedor */
+    background: #eee;
+}
+
+        .centrar-total {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+        .posicionada {
+    position: absolute;
+    top: 50px;     /* distancia desde arriba */
+    left: 100px;   /* distancia desde la izquierda */
+}
+
+        .centrada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+        .redonda {
+    width: 200px;
+    border-radius: 50%;
+}
+
+        body {
             font-family: Arial;
             text-align: center;
             background-color: #f0f0f0;
@@ -28,6 +87,7 @@
         .boton:hover {
             background: #0056b3;
         }
+
     </style>
 </head>
 <body>
@@ -43,3 +103,7 @@
     </script>
 </body>
 </html>
+
+
+
+
